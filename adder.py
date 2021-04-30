@@ -5,7 +5,8 @@ import os
 
 p = os.getcwd()
 
-scope = 'playlist-modify-private'
+#If playlist is private, set scope 'playlist-modify-private'
+scope = 'playlist-modify-public'
 
 username = '~'
 
@@ -17,7 +18,7 @@ notDone = []
 if token:
 	sp = spotipy.Spotify(auth=token)
 	sp.trace = False
-	with open(p+"/songs1.txt","r") as infile:
+	with open(p+"/songs1.txt","r",encoding="utf-8_sig") as infile:
 		counter = 0
 		for line in infile:
 			if counter == 0:
@@ -52,10 +53,10 @@ if token:
 					except IndexError:
 						notDone.append(q)
 
-	with open('tracks.txt','w') as of:
+	with open('tracks.txt','w',encoding="utf-8_sig") as of:
 		for s in songs:
 			of.write(s+"\n")
-	with open('orphans.txt','w') as ef:
+	with open('orphans.txt','w',encoding="utf-8_sig") as ef:
 		for s in notDone:
 			ef.write(s)
 	print(songs)
