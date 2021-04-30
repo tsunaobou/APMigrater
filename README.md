@@ -6,20 +6,19 @@ Your guide for moving your music from Apple Music to Spotify (without the annoyi
 ## Directions
 
 ### Setting Up
-Important:Erase all the contents of the three text files and overwrite them.
-1. Download this repository onto your computer.
+1. Download this repository onto your computer.  
 ```
 git clone https://github.com/ebenz99/APMigrater
 ```
-And Erase all the contents of the five text files and overwrite them.
-2. Open Apple Music. Click one song, and use shift to select all songs in library (or all songs you want to move). Click command-C to copy them.(If you are using Windows, use Ctrl+A and Ctrl+C)
-3. Open your favorite text editor in the directory where this repo is downloaded. This can be Sublime, Atom, etc. Just not vi. If you went to open vi, open the door to your bathroom instead, and please take a long look in the mirror.
-4. Paste into your text editor, and save it as apmusic.txt. Overwrite if prompted.
-5. In command line, run the command "python -V" to determine your python version. If the number starts with two, pull yourself from under the weight of your own misery and update your python to anything past version 3.
-6. Use the command "python3 maker.py" and "python3 cleaner.py" to clean up your song titles. Your songs1.txt file should now only contain song and arist names, seperated by "---"
-7. Create a spotify developer account. It's really easy. Just look up the phrase "Create a spotify developer account"
-8. Create a new app on that account. Call it whatever you want, and say it's a desktop app
-9. Once finished with set-up, click "edit settings". We only really care about the redirect URI. If you already have a redirect URI in mind, enter that here, and in adder.py at the redirect_url parameter. If not, just enter http://localhost:3000/ in the spotify settings. This is the default URI in adder.py and will work just fine. Save the changes [to both].
+And Erase all the contents of the five text files and overwrite them.  
+2. Open Apple Music. Click one song, and use shift to select all songs in library (or all songs you want to move).  Click command-C to copy them.(If you are using Windows, use Ctrl+A and Ctrl+C)  
+3. Open your favorite text editor in the directory where this repo is downloaded. This can be Sublime, Atom, etc. Just not vi. If you went to open vi, open the door to your bathroom instead, and please take a long look in the mirror.   
+4. Paste into your text editor, and save it as apmusic.txt. Overwrite if prompted.  
+5. In command line, run the command "python -V" to determine your python version. If the number starts with two, pull yourself from under the weight of your own misery and update your python to anything past version 3.  
+6. Use the command "python3 maker.py" and "python3 cleaner.py" to clean up your song titles. Your songs1.txt file should now only contain song and arist names, seperated by "---"  
+7. Create a spotify developer account. It's really easy. Just look up the phrase "Create a spotify developer account"  
+8. Create a new app on that account. Call it whatever you want, and say it's a desktop app  
+9. Once finished with set-up, click "edit settings". We only really care about the redirect URI. If you already have a redirect URI in mind, enter that here, and in adder.py at the redirect_url parameter. If not, just enter http://localhost:3000/ in the spotify settings. This is the default URI in adder.py and will work just fine. Save the changes [to both].  
 
 ### Editing
 9. Copy your client_id and client_secret into your adder.py file on your computer into their respective variables (Command-F is your friend here)
