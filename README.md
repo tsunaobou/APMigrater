@@ -6,8 +6,13 @@ Your guide for moving your music from Apple Music to Spotify (without the annoyi
 ## Directions
 
 ### Setting Up
-1. Download this repository onto your computer
-2. Open Apple Music. Click one song, and use shift to select all songs in library (or all songs you want to move). Click command-C to copy them.
+Important:Erase all the contents of the three text files and overwrite them.
+1. Download this repository onto your computer.
+```
+git clone https://github.com/ebenz99/APMigrater
+```
+And Erase all the contents of the five text files and overwrite them.
+2. Open Apple Music. Click one song, and use shift to select all songs in library (or all songs you want to move). Click command-C to copy them.(If you are using Windows, use Ctrl+A and Ctrl+C)
 3. Open your favorite text editor in the directory where this repo is downloaded. This can be Sublime, Atom, etc. Just not vi. If you went to open vi, open the door to your bathroom instead, and please take a long look in the mirror.
 4. Paste into your text editor, and save it as apmusic.txt. Overwrite if prompted.
 5. In command line, run the command "python -V" to determine your python version. If the number starts with two, pull yourself from under the weight of your own misery and update your python to anything past version 3.
